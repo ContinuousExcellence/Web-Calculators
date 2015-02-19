@@ -1,0 +1,10 @@
+{
+    "title" : "Lawyers App",
+    "description" : "Lawyers App Calculator",
+    "version" : 1.4,
+    "publisher" : "MibizApps",
+    "changelog" : "Initial Release",
+    "hasrequiresdata" : false,
+    "author" : "MibizApps",
+    "zipfile" : "http://mibizapps-lawyersapp.s3-website-ap-southeast-2.amazonaws.com/test-lawyersapp/LawyersApp.zip"	
+}

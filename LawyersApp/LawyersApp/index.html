@@ -1,0 +1,642 @@
+<html>
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+<head>
+    <title>Lawyer App</title>
+    <link rel="stylesheet" href="jquery.mobile.structure-1.3.2.min.css" />
+    <link rel="stylesheet" href="customizations.css" />
+    <link rel="stylesheet" href="themes/mostLightExtended.min.css" />
+    <script src="jquery-1.8.3.min.js"></script>
+    <script src="jquery.mobile-1.3.2.min.js"></script>
+    <script>
+        $.noConflict();
+		jQuery.support.cssTransform3d = true;
+    </script>
+    <script src="tinycolor.js"></script>
+    <script src="IOSBridge.js"></script>
+    <script src="mostHelp.js"></script>
+	
+</head>
+
+
+<body>
+
+<!-- Questions Page -->
+<div data-role="page" id="page_lawyerapp_home" data-theme="a">
+    <div data-role="content" class="stickypaddedcontent">
+        <form class="sd_home_form"  onsubmit="0">
+            <h4 id="dynamic_home_title" style="text-align: left;">Section 1 : Last Will & Testament</h4>
+            <h4>1. a)</h4>
+
+            <div data-role="fieldcontain" style="border: none;">
+                <fieldset data-role="controlgroup" >
+				
+					<input type="checkbox" name="Section1_1a" id="Section1_1a" />
+					<label for="Section1_1a" font-size="5px">You do NOT have a Will</label>
+					
+                </fieldset>
+            </div>
+			
+			<h4>1. b) You have a will, but since you made your last Will:</h4>
+			
+            <div data-role="fieldcontain" style="border: none;">
+                <fieldset data-role="controlgroup">
+				
+					<input type="checkbox" name="Section1_1b_Q1" id="Section1_1b_Q1" value="Q1" />
+					<label for="Section1_1b_Q1">You have married and your will was not specified to be made in contemplation of your marriage</label>
+			
+					<input type="checkbox" name="Section1_1b_Q2" id="Section1_1b_Q2" value="Q2"/>
+					<label for="Section1_1b_Q2">You have separated or divorced and your ex-partner/spouse was a beneficiary under your Will</label>
+			
+					<input type="checkbox" name="Section1_1b_Q3" id="Section1_1b_Q3" value="Q3"/>
+					<label for="Section1_1b_Q3">You have entered into or ended a de facto or a registered relationship</label>
+			
+					<input type="checkbox" name="Section1_1b_Q4" id="Section1_1b_Q4" value="Q4"/>
+					<label for="Section1_1b_Q4">You want to change the beneficiaries of your Will or the amount they will receive </label>
+			
+					<input type="checkbox" name="Section1_1b_Q5" id="Section1_1b_Q5" value="Q5"/>
+					<label for="Section1_1b_Q5">You have changed your name, or someone named in the Will has changed theirs</label>
+			
+					<input type="checkbox" name="Section1_1b_Q6" id="Section1_1b_Q6" value="Q6"/>
+					<label for="Section1_1b_Q6">An executor has died or becomes unwilling or unsuitable to act as executor</label>
+			
+					<input type="checkbox" name="Section1_1b_Q7" id="Section1_1b_Q7" value="Q7"/>
+					<label for="Section1_1b_Q7">A beneficiary (someone who has been left something in the Will) has died</label>
+			
+					<input type="checkbox" name="Section1_1b_Q8" id="Section1_1b_Q8" value="Q8"/>
+					<label for="Section1_1b_Q8">You have gifted specific property to a beneficiary which has now been sold, given away, placed in trust or which changes its character (for example, you bequeath shares in a company which restructures its 	share capital).</label>
+			
+					<input type="checkbox" name="Section1_1b_Q9" id="Section1_1b_Q9" value="Q9"/>
+					<label for="Section1_1b_Q9">A beneficiary marries or enters a de facto relationship with any person who you do not wish to	benefit from your estate.</label>
+			
+					<input type="checkbox" name="Section1_1b_Q10" id="Section1_1b_Q10" value="Q10"/>
+					<label for="Section1_1b_Q10">You start a Family Trust or Self Managed Superannuation Fund</label>
+			
+					<input type="checkbox" name="Section1_1b_Q11" id="Section1_1b_Q11" value="Q11"/>
+					<label for="Section1_1b_Q11">A beneficiary has become a non-resident for tax purposes</label>
+			
+                </fieldset>
+            </div>
+
+			<h4>1. c)</h4>
+			
+			<div data-role="fieldcontain" style="border: none;">
+                <fieldset data-role="controlgroup">
+                   
+					<input type="checkbox" name="Section1_1c_Q1" id="Section1_1c_Q1" value="Q1"/>
+					<label for="Section1_1c_Q1">Your beneficiaries could benefit from the ability to split income between various family members including minor children at normal marginal rates,</label>
+			
+					<input type="checkbox" name="Section1_1c_Q2" id="Section1_1c_Q2" value="Q2"/>
+					<label for="Section1_1c_Q2">A beneficiary is at risk or vulnerable (eg relationship concerns, bankruptcy or financially risky occupation, mental incapacity, special education needs, a spendthrift)</label>
+			
+					<input type="checkbox" name="Section1_1c_Q3" id="Section1_1c_Q3" value="Q2"/>
+					<label for="Section1_1c_Q3">In your will you have left nothing or a minimal proportion of your estate to a spouse, defacto, child, 	step-child or financial dependant (this includes a former spouse being maintained)</label>
+			
+                </fieldset>
+            </div>
+			
+			<h4 id="dynamic_home_title" style="text-align: left;">Section 2 : Enduring Power of Attorney</h4>
+			
+			
+			<h4>2. a)</h4>
+			
+			<div data-role="fieldcontain" style="border: none;">
+                <fieldset data-role="controlgroup">
+                   
+					<input type="checkbox" name="Section2_2a" id="Section2_2a" value="Q1"/>
+					<label for="Section2_2a">You do not have an Enduring Power of Attorney</label>
+					
+                </fieldset>
+            </div>
+			
+			<h4>2. b) You have an Enduring Power of Attorney but since making your last Enduring Power of Attorney:<h4>
+			
+			<div data-role="fieldcontain" style="border: none;">
+                <fieldset data-role="controlgroup">
+                   
+					<input type="checkbox" name="Section2_2b_Q1" id="Section2_2b_Q1" value="Q1"/>
+					<label for="Section2_2b_Q1">You have married and it was not specified to be made in contemplation of your marriage</label>
+			
+					<input type="checkbox" name="Section2_2b_Q2" id="Section2_2b_Q2" value="Q2"/>
+					<label for="Section2_2b_Q2">You want to change the attorneys you have appointed</label>
+			
+					<input type="checkbox" name="Section2_2b_Q3" id="Section2_2b_Q3" value="Q3"/>
+					<label for="Section2_2b_Q3">You have separated or divorced and your ex spouse/partner was an attorney</label>
+			
+					<input type="checkbox" name="Section2_2b_Q4" id="Section2_2b_Q4" value="Q4"/>
+					<label for="Section2_2b_Q4">An attorney dies, becomes bankrupt or enters into an insolvency agreement with creditors or becomes mentally incapable</label>
+			
+					<input type="checkbox" name="Section2_2b_Q5" id="Section2_2b_Q5" value="Q5"/>
+					<label for="Section2_2b_Q5">An attorney appointed for personal/health matters becomes your paid health carer </label>
+					
+                </fieldset>
+            </div>
+			
+			<h4>2. c)</h4>
+			
+			<div data-role="fieldcontain" style="border: none;">
+                <fieldset data-role="controlgroup">
+                  
+					<input type="checkbox" name="Section2_2c" id="Section2_2c" value="Q1"/>
+					<label for="Section2_2c">You have specific wishes in the event you are terminally ill and incapable of making decision regarding life sustaining medical treatment, palliative care and other special beliefs and wishes</label>
+			
+                </fieldset>
+            </div>
+			
+			<h4>2. d)</h4>
+			
+			<div data-role="fieldcontain" style="border: none;">
+                <fieldset data-role="controlgroup">
+                   
+					<input type="checkbox" name="Section2_2d" id="Section2_2d" value="Q1"/>
+					<label for="Section2_2d">You have a Family Discretionary Trust</label>
+					
+                </fieldset>
+            </div>
+			
+			<h4>2. e)</h4>
+			
+			<div data-role="fieldcontain" style="border: none;">
+                <fieldset data-role="controlgroup">
+                   
+					<input type="checkbox" name="Section2_2e" id="Section2_2e" value="Q1"/>
+					<label for="Section2_2e">You have a Self Managed Superannuation Fund</label>
+			
+                </fieldset>
+            </div>
+			
+			<h4>2. f)</h4>
+			
+			<div data-role="fieldcontain" style="border: none;">
+                <fieldset data-role="controlgroup">
+                  
+					<input type="checkbox" name="Section2_2f" id="Section2_2f" value="Q1"/>
+					<label for="Section2_2f">Do you have life insurance</label>
+					
+                </fieldset>
+            </div>
+			
+			<h4>2. g)</h4>
+			
+			<div data-role="fieldcontain" style="border: none;">
+                <fieldset data-role="controlgroup">
+                
+					<input type="checkbox" name="Section2_2g" id="Section2_2g" value="Q1"/>
+					<label for="Section2_2g">You are in business with other people</label>
+					
+                </fieldset>
+            </div>
+			
+            <div style="height: 0; overflow: hidden;">
+                <input type="submit" onclick="javascript:jQuery('#button_lawyerapp_result').click();return false;"/>
+            </div>
+
+        </form>
+	</div>
+
+    <div data-role="footer" class="ui-bar stickyfooter">
+		   <a id="button_view_saved_res"
+           data-role="button" data-transition="slide"
+           onclick="jQuery.mobile.changePage(jQuery('#page_lawyerapp_saved_results'), {transition:'slide'});">Saved Results</a>
+       
+			<a data-transition="slide" id="button_lawyerapp_result"
+			data-role="button" data-icon="grid" style="float: right;">Submit</a>
+    </div>
+
+</div>
+
+
+<!-- Result Page -->
+<div data-role="page" id="page_lawyerapp_result" data-theme="a">
+    <div data-role="content" class="stickypaddedcontent">
+	<span style="color: gray; font-size: 80%; float: right;"></span>
+	
+			<h4 style="text-align: left;">Your Results</h4>
+            <hr/>
+			
+            <h4 style="text-align: left;">Section 1 : Last Will & Testament</h4>
+            <hr/>
+
+            <div data-role="content" style="border: none;" id="div_1a">
+					<h4>1. a) You do NOT have a Will?</h4>
+					<label id="Section1_1a_x" style="text-align: left;">You said you have a will.</label>
+            </div>
+		
+			<div data-role="content" style="border: none;" id="div_1b">
+			
+			<h4>1. b) You have not ticked any of the below questions.</h4>
+		<!--	<h4 id="Section1_1b_x" style="text-align: left;"></h4>-->
+			
+			<label id="Section1_1b_Q1_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You have married and your will was not specified to be made in contemplation of your marriage</label><br/>
+			
+			<label id="Section1_1b_Q2_x" style="text-align: left;">??</label> &nbsp;
+            <label style="text-align: left;">You have separated or divorced and your ex-partner/spouse was a beneficiary under your Will</label><br/>
+			
+			<label id="Section1_1b_Q3_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You have entered into or ended a de facto or a registered relationship</label><br/>
+			
+			<label id="Section1_1b_Q4_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You want to change the beneficiaries of your Will or the amount they will receive </label><br/>
+			
+			<label id="Section1_1b_Q5_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You have changed your name, or someone named in the Will has changed theirs</label><br/>
+			
+			<label id="Section1_1b_Q6_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">An executor has died or becomes unwilling or unsuitable to act as executor</label><br/>
+			
+			<label id="Section1_1b_Q7_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">A beneficiary (someone who has been left something in the Will) has died</label><br/>
+			
+			<label id="Section1_1b_Q8_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You have gifted specific property to a beneficiary which has now been sold, given away, placed in trust or which changes its character (for example, you bequeath shares in a company which restructures its 	share capital).</label>
+			<br/>
+			
+			<label id="Section1_1b_Q9_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">A beneficiary marries or enters a de facto relationship with any person who you do not wish to	benefit from your estate.</label>
+			<br/>
+			
+			<label id="Section1_1b_Q10_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You start a Family Trust or Self Managed Superannuation Fund</label><br/>
+			
+			<label id="Section1_1b_Q11_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">A beneficiary has become a non-resident for tax purposes</label><br/>
+			
+			</div>
+
+			<div data-role="content" style="border: none;" id="div_1c">
+			<h4>1. c) You have not ticked any of the below questions.</h4>
+		<!--	<h4 id="Section1_1c_x" style="text-align: left;"></h4>-->
+			
+			<label id="Section1_1c_Q1_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">Your beneficiaries could benefit from the ability to split income between various family members including minor children at normal marginal rates,</label>
+			<br/>
+			
+			<label id="Section1_1c_Q2_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">A beneficiary is at risk or vulnerable (eg relationship concerns, bankruptcy or financially risky occupation, mental incapacity, special education needs, a spendthrift)</label>
+			<br/>
+			
+			<label id="Section1_1c_Q3_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">In your will you have left nothing or a minimal proportion of your estate to a spouse, defacto, child, 	step-child or financial dependant (this includes a former spouse being maintained)</label>
+			<br/>
+			
+            </div>
+			<hr/>
+			
+			<h4 id="dynamic_home_title" style="text-align: left;">Section 2 : Enduring Power of Attorney</h4>
+			<hr/>
+			
+			<div data-role="content" style="border: none;" id="div_2a">
+			<h4>2. a) You do not have an Enduring Power of Attorney</h4>
+			
+			<!--<h4 style="text-align: left;"></h4>-->
+            <label id="Section2_2a_x" style="text-align: left;">No</label> &nbsp;
+			<label tyle="text-align: left;">You do not have an Enduring Power of Attorney</label> <br/>
+            
+            </div>
+			
+			<div data-role="content" style="border: none;" id="div_2b">
+			
+			<h4>2. b) You have an Enduring Power of Attorney but since making your last Enduring Power of Attorney:</h4>
+			
+			<label id="Section2_2b_Q1_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You have married and it was not specified to be made in contemplation of your marriage</label><br/>
+			
+			<label id="Section2_2b_Q2_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You want to change the attorneys you have appointed</label><br/>
+			
+			<label id="Section2_2b_Q3_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You have separated or divorced and your ex spouse/partner was an attorney</label><br/>
+			
+			<label id="Section2_2b_Q4_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">An attorney dies, becomes bankrupt or enters into an insolvency agreement with creditors or becomes mentally incapable</label>
+			<br/>
+			
+			<label id="Section2_2b_Q5_x" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">An attorney appointed for personal/health matters becomes your paid health carer </label><br/>
+             
+            </div>
+			
+			<div data-role="content" style="border: none;" id="div_2c">
+			
+			<h4>2. c)</h4>
+			
+			<label id="Section2_2c_x" style="text-align: left;">You did not ticked this question.</label> 
+            
+            </div>
+			
+			<div data-role="content" style="border: none;" id="div_2d">
+			
+			<h4>2. d)</h4>
+			
+			<label id="Section2_2d_x" style="text-align: left;">You did not ticked this question.</label> 
+            
+            </div>
+			
+			<div data-role="content" style="border: none;" id="div_2e">
+			
+			<h4>2. e)</h4>
+			
+			<label id="Section2_2e_x" style="text-align: left;">No</label>
+            <label style="text-align: left;">You have a Self Managed Superannuation Fund</label><br/>
+			
+            </div>
+			
+			<div data-role="content" style="border: none;" id="div_2f">
+			
+			<h4>2. f)</h4>
+			
+			<label id="Section2_2f_x" style="text-align: left;">You did not ticked this question.</label> &nbsp;
+             
+			 </div>
+			
+			<div data-role="content" style="border: none;" id="div_2g">
+			
+			<h4>2. g)</h4>
+			
+			<label id="Section2_2g_x" style="text-align: left;">You did not ticked this question.</label> &nbsp;
+                
+            </div>
+			
+        <br/>
+		
+
+        <div id="divSMSEmail" class="sharebtnsdiv">
+			
+			<button id="btn_share_result">SMS</button> &nbsp;
+			<button id="btn_share_email_result">Email</button> &nbsp;
+            </div>
+		<div id ="divEmail" class="sharebtnsdiv">
+            <button id="btn_share_only_email_result">Email</button>
+        </div>
+        <br/>	
+			
+		
+		<div data-role="footer" class="ui-bar stickyfooter">
+		<a data-transition="slide" id="btn_submit_result"
+			data-role="button" data-icon="grid" style="float: left;" onclick="jQuery.mobile.changePage(jQuery('#page_lawyerapp_emailform'), {transition:'slide'});">Submit for Advice</a>
+    
+			<a data-transition="slide" id="btn_save_result"
+			data-role="button" data-icon="grid" style="float: right;" onclick="jQuery.mobile.changePage(jQuery('#page_lawyerapp_save'), {transition:'slide'});">Save</a>
+    </div>
+		
+	<!--	<div id ="divEmail" class="sharebtnsdiv">
+            <button id="btn_share_only_email_result">Email</button>
+        </div> -->
+
+        <br/>
+
+    </div> 
+
+</div>
+
+<!-- Save Page -->
+<div data-role="page" id="page_lawyerapp_save" data-theme="a">
+    <div data-role="content" class="stickypaddedcontent">
+
+        <label for="savename">Enter Name</label>
+        <input id="savename" name="savename" value="Results"/>
+		
+		<label for="resnote">Notes</label>
+        <textarea id="resnote" name="resnote" rows="6"
+                style="min-height: 120pt;">About this result</textarea>
+
+
+    </div>
+	
+    <div data-role="footer" class="ui-bar stickyfooter">
+        <a href="#" data-role="button" id="button_lawyerapp_res_save"
+           style="float: right;" data-theme="c">Save</a>
+		   	   
+    </div>
+</div>
+
+<!-- Saved Calculations Page -->
+<div data-role="page" id="page_lawyerapp_saved_results" data-theme="a">
+    <div data-role="content" class="stickypaddedcontent">
+        <div id="lawyerapp_saved_results">
+            Loading...
+        </div>
+    </div>
+</div>
+
+<!-- View Saved Results Page -->
+<div data-role="page" id="page_lawyerapp_view_result" data-theme="a">
+    <div data-role="content" class="stickypaddedcontent">
+	<div  class="ui-btn ui-btn-up-a ui-shadow" style="margin: -1px; padding: 4px; border: 1px solid gray;">
+                    <span style="font-size: 80%;">Result Summary</span><br/>
+                    <span id="rcs_name">Results</span>
+                </div>
+		<h4 style="text-align: left;">Section 1 : Last Will & Testament</h4>
+            <hr/>
+
+            <div data-role="content" style="border: none;" id="div_1a">
+					<h4>1. a) You do NOT have a Will?</h4>
+					<!--<h4 style="text-align: left;"></h4>-->
+					<label id="Section1_1a_y" style="text-align: left;">You said you have a will.</label>
+            </div>
+		
+			<div data-role="content" style="border: none;" id="div_1b">
+			
+			<h4>1. b) You have not ticked any of the below questions.</h4>
+			<!--<h4 id="Section1_1b_y" style="text-align: left;"></h4>-->
+			
+			<label id="Section1_1b_Q1_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You have married and your will was not specified to be made in contemplation of your marriage</label><br/>
+			
+			<label id="Section1_1b_Q2_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You have separated or divorced and your ex-partner/spouse was a beneficiary under your Will</label><br/>
+			
+			<label id="Section1_1b_Q3_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You have entered into or ended a de facto or a registered relationship</label><br/>
+			
+			<label id="Section1_1b_Q4_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You want to change the beneficiaries of your Will or the amount they will receive </label><br/>
+			
+			<label id="Section1_1b_Q5_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You have changed your name, or someone named in the Will has changed theirs</label><br/>
+			
+			<label id="Section1_1b_Q6_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">An executor has died or becomes unwilling or unsuitable to act as executor</label><br/>
+			
+			<label id="Section1_1b_Q7_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">A beneficiary (someone who has been left something in the Will) has died</label><br/>
+			
+			<label id="Section1_1b_Q8_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You have gifted specific property to a beneficiary which has now been sold, given away, placed in trust or which changes its character (for example, you bequeath shares in a company which restructures its 	share capital).</label>
+			<br/>
+			
+			<label id="Section1_1b_Q9_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">A beneficiary marries or enters a de facto relationship with any person who you do not wish to	benefit from your estate.</label>
+			<br/>
+			
+			<label id="Section1_1b_Q10_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You start a Family Trust or Self Managed Superannuation Fund</label><br/>
+			
+			<label id="Section1_1b_Q11_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">A beneficiary has become a non-resident for tax purposes</label><br/>
+			
+			</div>
+
+			<div data-role="content" style="border: none;" id="div_1c">
+			<h4>1. c) You have not ticked any of the below questions.</h4>
+			<!--<h4 id="Section1_1c_y" style="text-align: left;"></h4>-->
+			
+			<label id="Section1_1c_Q1_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">Your beneficiaries could benefit from the ability to split income between various family members including minor children at normal marginal rates,</label>
+			<br/>
+			
+			<label id="Section1_1c_Q2_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">A beneficiary is at risk or vulnerable (eg relationship concerns, bankruptcy or financially risky occupation, mental incapacity, special education needs, a spendthrift)</label>
+			<br/>
+			
+			<label id="Section1_1c_Q3_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">In your will you have left nothing or a minimal proportion of your estate to a spouse, defacto, child, 	step-child or financial dependant (this includes a former spouse being maintained)</label>
+			<br/>
+			
+            </div>
+			<hr/>
+			
+			<h4 id="dynamic_home_title" style="text-align: left;">Section 2 : Enduring Power of Attorney</h4>
+			<hr/>
+			
+			<div data-role="content" style="border: none;" id="div_2a">
+			<h4>2. a) You do not have an Enduring Power of Attorney</h4>
+			
+			<!--<h4 style="text-align: left;"></h4>-->
+            <label id="Section2_2a_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You do not have an Enduring Power of Attorney</label><br/>
+            </div>
+			
+			<div data-role="content" style="border: none;" id="div_2b">
+			
+			<h4>2. b) You have an Enduring Power of Attorney but since making your last Enduring Power of Attorney:</h4>
+			
+			<label id="Section2_2b_Q1_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You have married and it was not specified to be made in contemplation of your marriage</label><br/>
+			
+			<label id="Section2_2b_Q2_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You want to change the attorneys you have appointed</label><br/>
+			
+			<label id="Section2_2b_Q3_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">You have separated or divorced and your ex spouse/partner was an attorney</label><br/>
+			
+			<label id="Section2_2b_Q4_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">An attorney dies, becomes bankrupt or enters into an insolvency agreement with creditors or becomes mentally incapable</label>
+			<br/>
+			
+			<label id="Section2_2b_Q5_y" style="text-align: left;">No</label> &nbsp;
+            <label style="text-align: left;">An attorney appointed for personal/health matters becomes your paid health carer </label><br/>
+             
+            </div>
+			
+			<div data-role="content" style="border: none;" id="div_2c">
+			
+			<h4>2. c)</h4>
+			
+			<label id="Section2_2c_y" style="text-align: left;">You did not ticked this question.</label> 
+            
+            </div>
+			
+			<div data-role="content" style="border: none;" id="div_2d">
+			
+			<h4>2. d)</h4>
+			
+			<label id="Section2_2d_y" style="text-align: left;">You did not ticked this question.</label> 
+            
+            </div>
+			
+			<div data-role="content" style="border: none;" id="div_2e">
+			
+			<h4>2. e)</h4>
+			
+			<label id="Section2_2e_y" style="text-align: left;">No</label>
+            <label style="text-align: left;">You have a Self Managed Superannuation Fund</label><br/>
+			
+            </div>
+			
+			<div data-role="content" style="border: none;" id="div_2f">
+			
+			<h4>2. f)</h4>
+			
+			<label id="Section2_2f_y" style="text-align: left;">You did not ticked this question.</label> &nbsp;
+             
+			 </div>
+			
+			<div data-role="content" style="border: none;" id="div_2g">
+			
+			<h4>2. g)</h4>
+			
+			<label id="Section2_2g_y" style="text-align: left;">You did not ticked this question.</label> &nbsp;
+                
+            </div>
+			
+        
+        <br/>
+
+        <div id='divSaveSMSEmail' class="sharebtnsdiv">
+          
+			<button id="btn_share_sms_saved">SMS</button> &nbsp;
+			<button id="btn_share_email_saved">Email</button> &nbsp;
+			
+        </div>
+		
+		<div id='divSaveEmail' class="sharebtnsdiv">
+            <button id="btn_share_only_email_saved">Email</button>
+        </div>
+
+    </div>
+   <div data-role="footer" class="ui-bar stickyfooter">
+        <a data-transition="slide" id="btn_submit_result"
+			data-role="button" data-icon="grid" style="float: left;" onclick="jQuery.mobile.changePage(jQuery('#page_lawyerapp_emailform'), {transition:'slide'});">Submit for Advice</a>
+    
+		<a data-role="button" id="button_lawyersapp_delete"
+           style="float: right;" data-theme="b"  onclick="deletesavedcalc();">Delete</a>
+		   
+    </div>
+</div>
+
+<!-- Email Form Page -->
+<div data-role="page" id="page_lawyerapp_emailform" data-theme="a">
+    <div data-role="content" class="stickypaddedcontent">
+
+        <form class="rc_email_form"  onsubmit="0" >
+            <span style="color: gray; font-size: 80%; float: right;" id="dynamic_version"></span>
+            <h4 id="dynamic_home_title" style="text-align: center;">Fill Details</h4>
+            <hr/>
+  
+            <div>
+			<label for="rc_name">Enter Name</label>
+            <input placeholder="" id="rc_name"	name="rc_name" value=""/>
+			
+			<label for="rc_phone">Enter Phone No.</label>
+			<input placeholder="" id="rc_phone"	name="rc_phone" value=""/>
+			
+			<label for="rc_email">Enter Email id</label>
+			<input placeholder="" id="rc_email"	name="rc_email" value=""/>
+			
+			<label for="rc_postcode">Enter Postcode</label>
+			<input placeholder="" id="rc_postcode"	name="rc_postcode" value=""/>
+			
+			<label for="rc_comment">Comment</label>
+			<input placeholder="" id="rc_comment"	name="rc_comment" value=""/>
+				
+            </div>
+			<div style="height: 0; overflow: hidden;">
+            <input type="submit" onclick="javascript:jQuery('#button_lawyerapp_emailsubmit').click();return false;"/>
+            </div>
+        </form>
+
+    </div>
+
+    <div data-role="footer" class="ui-bar stickyfooter">
+        <a data-transition="slide" id="button_lawyerapp_emailsubmit"
+           data-role="button" data-icon="grid" style="float: right;">Submit For Advice</a>
+	</div>
+
+
+</div>
+<script src="lawyerapp.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+[
+    {
+        "name" : "calcTitle",
+        "value" : "Holding Costs Calculator",
+        "helpText" : "Customize the title of your calculator.",
+        "title" : "Calculator Title",
+        "type" : "textbox"
+    },
+    {
+        "name" : "disclaimer",
+        "value" : "Whilst every effort has been made to ensure the accuracy of the calculators, the results should be used as an indication only.",
+        "helpText" : "The disclaimer appears below any calculator results.",
+        "title" : "Disclaimer",
+        "type" : "textarea"
+    },
+	{
+	   "value" : "#000000",
+	   "helpText" : "Select a color to be used for the title of your Applet.",
+	   "title" : "Title Color",
+	   "name" : "titleColor",
+	   "type" : "color"
+	},	
+	{
+		"value" : "#ffffff",
+		"helpText" : "Select a back color to be used as the main back color in your Applet.",
+		"title" : "Background",
+		"name" : "background",
+		"type" : "color"
+	},
+	{
+		"value" : "#240DF2",
+		"helpText" : "Select a text color to be used as the main text color in your Applet.",
+		"title" : "Text Color",
+		"name" : "color",
+		"type" : "color"
+	},
+	{
+		"value" : "#240DF2",
+		"helpText" : "Select a button color to be used as the main button color in your Applet.",
+		"title" : "Button Color",
+		"name" : "buttonColor",
+		"type" : "color"
+	},
+	{
+		"value" : "#240DF2",
+		"helpText" : "Select a button text color to be used as the main button text color in your Applet.",
+		"title" : "Button Text Color",
+		"name" : "buttonFontColor",
+		"type" : "color"
+	},
+	{
+		"value" : "#240DF2",
+		"helpText" : "Select the button color to be used as the footer button color in your Applet.",
+		"title" : "Footer Button Color",
+		"name" : "footerButtonColor",
+		"type" : "color"
+	},
+	{
+		"value" : "#240DF2",
+		"helpText" : "Select a button text color to be used as the footer button text color in your Applet.",
+		"title" : "Footer Button Text Color",
+		"name" : "footerButtonFontColor",
+		"type" : "color"
+	},
+	{
+		"value" : "#240DF2",
+		"helpText" : "Select a back color to be used as the footer color in your Applet.",
+		"title" : "Footer Color",
+		"name" : "footerBarColor",
+		"type" : "color"
+	},
+	{
+		"value" : "#240DF2",
+		"helpText" : "Select a text color to be used as the disclaimer text color in your Applet.",
+		"title" : "Disclaimer Text Color",
+		"name" : "disclaimerFontColor",
+		"type" : "color"
+	},
+	{
+		"value" : "#240DF2",
+		"helpText" : "Select a text color to be used as the input text color in your Applet.",
+		"title" : "Input Text Color",
+		"name" : "inputTextColor",
+		"type" : "color"
+	}
+]
